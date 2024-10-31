@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Płynne przejścia między sekcjami</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        section {
+            height: 100vh; /* Wysokość sekcji na cały ekran */
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        #section1 { background-color: #ffadad; }
+        #section2 { background-color: #ffd6a5; }
+        #section3 { background-color: #fdffb6; }
+        #section4 { background-color: #caffbf; }
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#section1">Sekcja 1</a>
+        <a href="#section2">Sekcja 2</a>
+        <a href="#section3">Sekcja 3</a>
+        <a href="#section4">Sekcja 4</a>
+    </nav>
+
+    <section id="section1">
+        <h1>Sekcja 1</h1>
+    </section>
+    <section id="section2">
+        <h1>Sekcja 2</h1>
+    </section>
+    <section id="section3">
+        <h1>Sekcja 3</h1>
+    </section>
+    <section id="section4">
+        <h1>Sekcja 4</h1>
+    </section>
+
+</body>
+</html>
